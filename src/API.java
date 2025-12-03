@@ -123,7 +123,8 @@ public class API {
             System.out.println("GET Response: "+summaryForecast);
 
             // --- Example POST request: Perform sentiment analysis using HuggingFace model ---
-            String journalInput = "I spent my free time with my friends today. We had a great time at the park and enjoyed the sunny weather.";
+            String journalInput = sc.nextLine();
+            sc.close();
             String postUrl = "https://router.huggingface.co/hf-inference/models/distilbert/distilbert-base-uncased-finetuned-sst-2-english";
 
             // Safely get bearer token
